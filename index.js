@@ -1,7 +1,7 @@
 const http = require("http");
 
 const fs = require("fs");
-const PORT = 4000;
+const PORT = process.env.PORT;
 
 const home = fs.readFileSync('./index.html');
 const about = fs.readFileSync('./about.html');
